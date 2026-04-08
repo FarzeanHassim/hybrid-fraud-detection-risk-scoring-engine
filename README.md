@@ -1,34 +1,65 @@
 # Hybrid Fraud Detection & Risk Scoring Engine
 
-Designed and implemented a hybrid fraud detection framework inspired by real-world systems used in financial institutions, combining rules-based logic and machine learning for transaction monitoring and risk scoring.
+This project simulates an end-to-end hybrid fraud detection system for transaction monitoring, combining rules-based controls with machine learning to improve fraud detection, alert prioritisation, and decisioning.
+
+It consolidates:
+- rules-based detection and scoring
+- ML-based fraud probability prediction
+- hybrid risk scoring
+- operational decisioning (Approve / Review / Block)
+- analyst workflow visualisation through a Streamlit dashboard
+
+This reflects how modern fraud detection systems in banks and fintechs balance explainability, predictive power, and operational usability.
 
 ## 💼 Project Type
+
 End-to-End Fraud Detection System Simulation (Bank / Fintech Use Case)
 
 ---
 
 ## 📌 Overview
+
 This project simulates a real-world fraud detection system used in financial institutions by combining rules-based scoring and machine learning.
 
 It demonstrates how hybrid risk scoring improves fraud detection, reduces false positives, and enables more effective alert prioritisation in transaction monitoring workflows.
 
 It reflects how modern fraud detection systems combine explainable rules with probabilistic machine learning models to optimise both detection accuracy and operational efficiency.
 
+This project reflects how production fraud systems integrate detection, scoring, and decisioning into a single operational workflow.
+
+### Key Result
+
+- Reduced false positives and improved alert prioritisation using hybrid scoring  
+- Achieved stronger fraud detection recall while maintaining operational efficiency
+
+---
+
+## End-to-End Workflow Coverage
+
+This project demonstrates full fraud detection lifecycle:
+
+- Detection → Rules-based scoring  
+- Optimisation → Machine learning refinement  
+- Decisioning → Hybrid scoring and action mapping  
+- Operations → Analyst dashboard and workflow  
+
+This aligns with real-world fraud risk engines used in financial institutions.
+
 ---
 
 ## 📊 Dashboard Preview
 
 ### 🔹 Overview Dashboard
-![Overview](images/dashboard_overview.png)
+![Overview](./dashboard_overview.png)
 
 ### 🔹 Risk Insights
-![Risk Insights](images/dashboard_risk_insights.png)
+![Risk Insights](./dashboard_risk_insights.png)
 
 ### 🔹 Model Insights
-![Model Insights](images/dashboard_model_insights.png)
+![Model Insights](./dashboard_model_insights.png)
 
 ### 🔹 Analyst Workflow
-![Analyst Notes](images/dashboard_analyst_notes.png)
+![Analyst Notes](./dashboard_analyst_notes.png)
 
 ---
 
@@ -78,12 +109,28 @@ Recommended Action (Block / Review / Approve)
 ---
 
 ## 🎯 Objectives
-- Simulate fraud detection using transaction data
+
+- Simulate fraud detection workflows using transaction-level behavioural data
 - Implement rules-based risk scoring
 - Build a machine learning model to predict fraud
 - Combine both approaches into a hybrid scoring engine
 - Prioritise alerts using risk levels and recommended actions
-- Provide an interactive dashboard for analyst review
+- Provide an interactive dashboard to support analyst triage and decision-making
+
+---
+
+## 🧠 Hybrid Scoring Logic
+
+The engine combines:
+- Rule-based score for explainable fraud indicators
+- ML fraud probability for predictive risk assessment
+
+These are combined into a final hybrid score used to assign:
+- final risk level
+- recommended action
+- analyst review priority
+
+This approach improves operational usability by translating detection signals into decision-ready outputs.
 
 ---
 
@@ -95,7 +142,9 @@ This project demonstrates how financial institutions can:
 - Improve alert prioritisation for investigators
 - Enhance fraud detection recall while maintaining operational efficiency
 - Support risk-based decision making using hybrid scoring models
-
+- Bridge the gap between detection models and operational decisioning layers
+- Aligns with risk-based approaches expected in regulated AML/CFT and fraud frameworks
+  
 The approach reflects real-world fraud risk engines used in banks, payment platforms, and fintech companies, where hybrid scoring models are critical for balancing detection accuracy and operational efficiency.
 
 ---
@@ -107,6 +156,34 @@ The approach reflects real-world fraud risk engines used in banks, payment platf
 - Logistic regression model with threshold optimisation
 - Streamlit dashboard simulating analyst workflow
 - Visual analytics for model performance and risk distribution
+  
+---
+
+## Key Features Used
+
+The model uses a combination of behavioural and risk-based indicators, including:
+
+- transaction amount
+- transaction velocity (1h / 24h)
+- new payee indicator
+- card present indicator
+- account age
+- chargeback history
+- prior alerts
+- merchant category and merchant risk level
+- country mismatch between transaction and IP
+  
+---
+
+## Decisioning Framework
+
+The system translates hybrid risk scores into operational decisions:
+
+- High Risk → Block / Escalate for Investigation
+- Medium Risk → Review / Monitor
+- Low Risk → Approve
+
+This simulates how fraud engines support downstream analyst and operations workflows.
 
 ---
 
@@ -151,6 +228,19 @@ Synthetic dataset representing:
 
 ---
 
+## Why Hybrid Matters
+
+Rules-based systems are transparent but can generate high false positives.
+Machine learning improves detection but is less directly explainable.
+
+A hybrid model combines both strengths:
+- better fraud detection
+- more practical alert prioritisation
+- clearer operational actions
+- stronger fit for regulated environments
+
+---
+
 ## 📊 Results & Comparison
 
 | Approach | Strength | Limitation |
@@ -166,18 +256,27 @@ Synthetic dataset representing:
 
 ---
 
+## Example Output
+
+The scored output includes:
+- ML fraud probability
+- normalised rule score
+- final hybrid score
+- final risk level
+- recommended action
+
+Example operational outputs:
+- Low → Approve
+- Medium → Review / Monitor
+- High → Block / Escalate for Investigation
+
+---
+
 ## 📈 Model Evaluation
 
 - Precision, Recall, and F1-score used for performance evaluation  
 - Recall prioritised to minimise missed fraud cases  
 - Threshold tuning applied to balance detection vs false positives  
-
----
-
-## 📊 Sample Output
-- Final risk score per transaction
-- Risk classification (High / Medium / Low)
-- Recommended action (Block / Review / Approve)
 
 ---
 
@@ -195,6 +294,7 @@ Interactive dashboard simulating fraud analyst workflow.
 ---
 
 ## 🧠 Key Insights
+
 - Accuracy alone is insufficient in fraud detection
 - Recall is critical to minimise missed fraud
 - Rules and ML serve complementary roles
@@ -203,6 +303,7 @@ Interactive dashboard simulating fraud analyst workflow.
 ---
 
 ## 🏦 Real-World Applications
+
 - Banking transaction monitoring systems
 - Fintech payment risk engines
 - Fraud detection platforms
@@ -211,6 +312,7 @@ Interactive dashboard simulating fraud analyst workflow.
 ---
 
 ## 🛠️ Tools Used
+
 - Python
 - Pandas / NumPy
 - Scikit-learn
@@ -220,6 +322,7 @@ Interactive dashboard simulating fraud analyst workflow.
 ---
 
 ## 🚀 Future Improvements
+
 - Real-time scoring pipeline
 - Advanced ML models (XGBoost, Random Forest)
 - SHAP explainability
@@ -242,6 +345,14 @@ Interactive dashboard simulating fraud analyst workflow.
 - AML / transaction monitoring teams  
 - Risk and compliance professionals  
 - Fintech and payment risk teams
+
+---
+
+## How to Use This Project
+
+- Explore the notebook to understand model logic and scoring methodology  
+- Review the scored dataset to see final risk outputs  
+- Run the Streamlit app to simulate analyst workflow and alert prioritisation
 
 --- 
 
