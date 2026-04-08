@@ -59,6 +59,8 @@ streamlit run app.py
 
 ## 🏗️ System Architecture
 
+This architecture reflects how modern fraud detection systems integrate rule-based controls with machine learning models to support scalable and risk-based decision making.
+
 ```
 Transaction Data 
     ↓
@@ -72,8 +74,6 @@ Risk Classification (High / Medium / Low)
     ↓
 Recommended Action (Block / Review / Approve)
 ```
-
-This architecture reflects how modern fraud detection systems integrate rule-based controls with machine learning models to support scalable and risk-based decision making.
 
 ---
 
