@@ -1,5 +1,7 @@
 # Hybrid Fraud Detection & Risk Scoring Engine
 
+Designed and implemented a hybrid fraud detection framework inspired by real-world systems used in financial institutions, combining rules-based logic and machine learning for transaction monitoring and risk scoring.
+
 ## 💼 Project Type
 End-to-End Fraud Detection System Simulation (Bank / Fintech Use Case)
 
@@ -10,22 +12,40 @@ This project simulates a real-world fraud detection system used in financial ins
 
 It demonstrates how hybrid risk scoring improves fraud detection, reduces false positives, and enables more effective alert prioritisation in transaction monitoring workflows.
 
+It reflects how modern fraud detection systems combine explainable rules with probabilistic machine learning models to optimise both detection accuracy and operational efficiency.
+
+---
+
+## 📊 Dashboard Preview
+
+### 🔹 Overview Dashboard
+![Overview](images/dashboard_overview.png)
+
+### 🔹 Risk Insights
+![Risk Insights](images/dashboard_risk_insights.png)
+
+### 🔹 Model Insights
+![Model Insights](images/dashboard_model_insights.png)
+
+### 🔹 Analyst Workflow
+![Analyst Notes](images/dashboard_analyst_notes.png)
+
 ---
 
 ## 📂 Access Project Files
 
 - 📓 **Notebook (Full Workflow)**  
-  👉 [View Notebook](https://github.com/FarzeanHassim/hybrid-fraud-detection-risk-scoring-engine/blob/main/real_time_fraud_detection_engine.ipynb)
+  👉 [View Notebook](./real_time_fraud_detection_engine.ipynb)
 
 - 📊 **Sample Dataset**  
-  👉 [View Dataset](https://github.com/FarzeanHassim/hybrid-fraud-detection-risk-scoring-engine/blob/main/sample_transactions.csv)
+  👉 [View Dataset](./sample_transactions.csv)
 
 - 📈 **Scored Results Output**  
-  👉 [View Results](https://github.com/FarzeanHassim/hybrid-fraud-detection-risk-scoring-engine/blob/main/df_test_results.csv)
+  👉 [View Results](./df_test_results.csv)
 
-- 📊 **Dashboard Code (Streamlit)**  
-  👉 [View App](https://github.com/FarzeanHassim/hybrid-fraud-detection-risk-scoring-engine/blob/main/app.py)
-
+- 📊 **Dashboard Code (Streamlit App)**  
+  👉 [View App](./app.py)
+  
 ---
 
 ## ▶️ Run Locally
@@ -53,6 +73,8 @@ Risk Classification (High / Medium / Low)
 Recommended Action (Block / Review / Approve)
 ```
 
+This architecture reflects how modern fraud detection systems integrate rule-based controls with machine learning models to support scalable and risk-based decision making.
+
 ---
 
 ## 🎯 Objectives
@@ -62,6 +84,39 @@ Recommended Action (Block / Review / Approve)
 - Combine both approaches into a hybrid scoring engine
 - Prioritise alerts using risk levels and recommended actions
 - Provide an interactive dashboard for analyst review
+
+---
+
+## 💼 Business Impact
+
+This project demonstrates how financial institutions can:
+
+- Reduce false positives in transaction monitoring systems
+- Improve alert prioritisation for investigators
+- Enhance fraud detection recall while maintaining operational efficiency
+- Support risk-based decision making using hybrid scoring models
+
+The approach reflects real-world fraud risk engines used in banks, payment platforms, and fintech companies, where hybrid scoring models are critical for balancing detection accuracy and operational efficiency.
+
+---
+
+## ⭐ Key Features
+
+- Hybrid rules-based and machine learning fraud detection
+- Risk scoring and alert prioritisation engine
+- Logistic regression model with threshold optimisation
+- Streamlit dashboard simulating analyst workflow
+- Visual analytics for model performance and risk distribution
+
+---
+
+## ⚡ Tech Stack
+
+- **Language:** Python  
+- **Data Processing:** Pandas, NumPy  
+- **Machine Learning:** Scikit-learn (Logistic Regression)  
+- **Visualisation:** Matplotlib  
+- **Dashboard:** Streamlit
 
 ---
 
@@ -108,6 +163,14 @@ Synthetic dataset representing:
 - Improved fraud detection (higher recall)
 - Structured alert prioritisation
 - Better alignment with real-world fraud workflows
+
+---
+
+## 📈 Model Evaluation
+
+- Precision, Recall, and F1-score used for performance evaluation  
+- Recall prioritised to minimise missed fraud cases  
+- Threshold tuning applied to balance detection vs false positives  
 
 ---
 
@@ -164,6 +227,23 @@ Interactive dashboard simulating fraud analyst workflow.
 - Integration with external data sources
 
 ---
+
+## ⚠️ Limitations
+
+- Synthetic dataset may not reflect real-world complexity  
+- Model performance may vary on real production data  
+- Further validation required with larger datasets  
+
+---
+
+## 🎯 Target Users
+
+- Fraud analysts and investigators  
+- AML / transaction monitoring teams  
+- Risk and compliance professionals  
+- Fintech and payment risk teams
+
+--- 
 
 ## 👤 Author
 Farzean Hassim
