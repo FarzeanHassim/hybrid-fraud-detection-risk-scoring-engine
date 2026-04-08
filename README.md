@@ -50,16 +50,16 @@ This aligns with real-world fraud risk engines used in financial institutions.
 ## 📊 Dashboard Preview
 
 ### 🔹 Overview Dashboard
-![Overview](./dashboard_overview.png)
+![Overview](./dashboard_overview.png.jpg)
 
 ### 🔹 Risk Insights
-![Risk Insights](./dashboard_risk_insights.png)
+![Risk Insights](./dashboard_risk_insights.png.jpg)
 
 ### 🔹 Model Insights
-![Model Insights](./dashboard_model_insights.png)
+![Model Insights](./dashboard_model_insights.png.jpg)
 
 ### 🔹 Analyst Workflow
-![Analyst Notes](./dashboard_analyst_notes.png)
+![Analyst Notes](./dashboard_analyst_notes.png.jpg)
 
 ---
 
