@@ -27,6 +27,8 @@ It reflects how modern fraud detection systems combine explainable rules with pr
 
 This project reflects how production fraud systems integrate detection, scoring, and decisioning into a single operational workflow.
 
+This project can be extended into an AI-assisted fraud decisioning system, where large language models (LLMs) support alert explanation, case summarisation, and analyst decision workflows.
+
 ### Key Result
 
 - Reduced false positives and improved alert prioritisation using hybrid scoring  
@@ -134,6 +136,22 @@ This approach improves operational usability by translating detection signals in
 
 ---
 
+## 🔄 Evolution Towards AI-Enabled Fraud Decisioning
+
+While this system combines rules-based logic and machine learning for detection and scoring, it is designed to evolve into an AI-enabled fraud decisioning platform.
+
+Potential enhancements include:
+
+- LLM-based alert explanation and summarisation  
+- AI-assisted fraud case review and decision support  
+- Agentic workflows for multi-step fraud investigations  
+- AI-generated investigation notes and reporting  
+- Real-time decisioning pipelines with adaptive learning  
+
+This reflects the industry shift from traditional fraud detection toward hybrid systems combining rules, machine learning, and AI-assisted decisioning.
+
+---
+
 ## 💼 Business Impact
 
 This project demonstrates how financial institutions can:
@@ -143,7 +161,7 @@ This project demonstrates how financial institutions can:
 - Enhance fraud detection recall while maintaining operational efficiency
 - Support risk-based decision making using hybrid scoring models
 - Bridge the gap between detection models and operational decisioning layers
-- Aligns with risk-based approaches expected in regulated AML/CFT and fraud frameworks
+- Align with risk-based approaches expected in regulated AML/CFT and fraud frameworks
   
 The approach reflects real-world fraud risk engines used in banks, payment platforms, and fintech companies, where hybrid scoring models are critical for balancing detection accuracy and operational efficiency.
 
@@ -355,6 +373,12 @@ Interactive dashboard simulating fraud analyst workflow.
 - Run the Streamlit app to simulate analyst workflow and alert prioritisation
 
 --- 
+
+## 🎯 Key Takeaway
+
+This project demonstrates how fraud detection systems can evolve from rule-based controls into hybrid, AI-enabled decisioning platforms that integrate detection, scoring, and operational workflows to support scalable and risk-based financial crime operations.
+
+---
 
 ## 👤 Author
 Farzean Hassim
